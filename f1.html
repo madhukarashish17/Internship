@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>First Page</title>
+    <!-- <link rel="stylesheet" href="D:\internship\css\style.scss"> -->
+  </head>
+  <body>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Overpass:400,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <div class="topBar">
+      <div class="content">
+        <a href="f3.html" class="url"><i class="fas fa-bell fa-lg"></i></a>
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <a href="f2.html" class="url"><i class="fas fa-plus-circle fa-lg"></i>
+            <span>New Request</span></a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <i class="fas fa-user-circle fa-lg"></i>
+          <i class="fas fa-caret-down fa-lg"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ************************************************************************************************************** -->
+    <div class="h">
+      <div class="nav">
+        <div class="request container">
+          <i class="fas fa-clone fa-2x"></i>
+          <div class="req">
+            Requests
+          </div>
+        </div>
+        <div class="routes container">
+          <i class="fas fa-route fa-2x"></i>
+          <div class="rou">Route</div>
+        </div>
+        <div class="pricing container">
+          <i class="fas fa-book fa-2x"></i>
+          <div class="price">
+            Pricing Record
+          </div>
+        </div>
+        <div class="settings container">
+          <i class="fas fa-cog fa-2x"></i>
+          <div class="sett">
+            Settings
+          </div>
+        </div>
+        <div class="wms container">
+          <i class="fas fa-globe fa-2x"></i>
+          <div class="wmsr">
+            WMS Records
+          </div>
+        </div>
+      </div>
+      <!-- **********************************************************************************************************  NAVBAR 2 -->
+      <div class="nav2">
+        <div class="mrl">
+          Material Request List
+        </div>
+        <div class="new">
+          <div class="collection">
+            <a href="#" class="anchor">
+              <div class=" all container">
+                <i class="fas fa-align-justify fa-2x"></i>
+                <span class="span">All</span>
+              </div></a
+            >
+            <a href="#" class="anchor">
+              <div class="mr container">
+                <i class="fas fa-box fa-2x"></i>
+                <span class="span">MR Draft</span>
+              </div></a
+            >
+            <a href="#" class="anchor">
+              <div class="pending container">
+                <i class="fas fa-spinner fa-2x"></i>
+                <span class="span">Pending</span>
+              </div></a
+            >
+            <a href="#" class="anchor">
+              <div class="approve container">
+                <i class="fas fa-clipboard-list fa-2x"></i>
+                <span class="span">Approved</span>
+              </div></a
+            >
+            <a href="#" class="anchor">
+              <div class="sr container">
+                <i class="fas fa-audio-description fa-2x"></i>
+                <span class="span">Sent to SP</span>
+              </div></a
+            >
+          </div>
+        </div>
+        <!-- ****************************************************************************************************** SEARCH BAR-->
+        <div class="search">
+          <div class="line">
+            <i class="fas fa-grip-lines"></i>
+          </div>
+          <div class="searching">
+            <form action="active">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="search..."
+                  name="search"
+                />
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="#">Go!</i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="incoming">
+            <i class="fas fa-external-link-alt fa-2x"></i>
+          </div>
+          <div class="outgoing">
+            <i class="fas fa-external-link-alt  fa-2x"></i>
+          </div>
+        </div>
+        <!-- ********************************************************************************************************************* NAVBAR 2 (TABLE)  -->
+
+        <div class="table">
+          <table>
+            <tr>
+              <!-- ************************************************************************************************ check box -->
+              <th>
+                <i class="far fa-square fa-2x fa-2x"></i>
+              </th>
+              <!-- ************************************************************************************************ date container -->
+              <th>
+                <div class="date">
+                  <div class="arrows">
+                    <a href="#"><i class="fas fa-sort-up"></i></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                  </div>
+                  <a href="#" class="header"> <span> Date</span></a>
+                </div>
+              </th>
+              <!-- ***************************************************************************** requester -->
+              <th>
+                <div class="requester">
+                  <div class="arrows">
+                    <a href="#"><i class="fas fa-sort-up"></i></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                  </div>
+                  <a href="#" class="header"> <span>Requester</span></a>
+                </div>
+              </th>
+              <!-- *******************************************************************status -->
+              <th>
+                <div class="status">
+                  <div class="arrows">
+                    <a href="#"><i class="fas fa-sort-up"></i></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                  </div>
+                  <a href="#" class="header"> <span> status</span></a>
+                </div>
+              </th>
+              <!-- *************************************************************************pos -->
+              <th>
+                <div class="pos">
+                  <div class="arrows">
+                    <a href="#"><i class="fas fa-sort-up"></i></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                  </div>
+                  <a href="#" class="header"> <span> pos</span></a>
+                </div>
+              </th>
+              <!-- ***************************************************************************warehouse -->
+              <th>
+                <div class="warehouse">
+                  <div class="arrows">
+                    <a href="#"><i class="fas fa-sort-up"></i></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                  </div>
+                  <a href="#" class="header"> <span> warehouse</span></a>
+                </div>
+              </th>
+              <!-- ****************************************************************************buyer -->
+              <th>
+                <div class="buyer">
+                  <div class="arrows">
+                    <a href="#"><i class="fas fa-sort-up"></i></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                  </div>
+                  <a href="#" class="header"> <span> Buyer</span></a>
+                </div>
+              </th>
+              <!-- ****************************************************************************po counter -->
+              <th>
+                <div class="po">
+                  <div class="arrows">
+                    <a href="#"><i class="fas fa-sort-up"></i></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                  </div>
+                  <a href="#" class="header"> <span> PO Type</span></a>
+                </div>
+              </th>
+              <!-- ******************************************************************************department counter -->
+              <th>
+                <div class="department">
+                  <div class="arrows">
+                    <a href="#"><i class="fas fa-sort-up"></i></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                  </div>
+                  <a href="#" class="header"> <span> Department</span></a>
+                </div>
+              </th>
+              <!-- *************************************************************************** VENDER -->
+              <th>
+                <div class="vender">
+                  <div class="arrows">
+                    <a href="#"><i class="fas fa-sort-up"></i></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                  </div>
+                  <a href="#" class="header"> <span> Vender</span></a>
+                </div>
+              </th>
+              <!-- ***************************************************************************** MR REF NO. -->
+              <th>
+                <div class="mr">
+                  <div class="arrows">
+                    <a href="#"><i class="fas fa-sort-up"></i></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                  </div>
+                  <a href="#" class="header"> <span> MR Ref no.</span></a>
+                </div>
+              </th>
+              <!-- ****************************************************************************** TOTAL -->
+              <th>
+                <div class="total">
+                  <div class="arrows">
+                    <a href="#"><i class="fas fa-sort-up"></i></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                  </div>
+                  <a href="#" class="header"> <span> Total</span></a>
+                </div>
+              </th>
+            </tr>
+            <!-- *************************************************************************************** TABLE CONTENT -->
+            <tr>
+              <td>
+                <i class="far fa-square fa-2x"></i>
+              </td>
+              <td>09/12/2018</td>
+              <td>Arsalan Khan</td>
+              <td><button class="btn1" type="submit">MR Draft</button></td>
+              <td>-</td>
+              <td>Warehouse</td>
+              <td>Buyer xyz1234</td>
+              <td>Cement</td>
+              <td>Department x</td>
+              <td>Vendor X</td>
+              <td>MR Ref No.</td>
+              <td>$825.00</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="far fa-square fa-2x"></i>
+              </td>
+              <td>08/12/2018</td>
+              <td>Roark Janis</td>
+              <td><button class="btn2" type="submit">Pending</button></td>
+              <td>-</td>
+              <td>Warehouse</td>
+              <td>Buyer y</td>
+              <td>Chemicals</td>
+              <td>Department</td>
+              <td>Vendor X</td>
+              <td>MR Ref No.</td>
+              <td>$825.00</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="far fa-square fa-2x"></i>
+              </td>
+              <td>07/12/2018</td>
+              <td>Iulia Constantinescu</td>
+              <td><button class="btn3" type="submit">Pending</button></td>
+              <td>-</td>
+              <td>Warehouse</td>
+              <td>Buyer z</td>
+              <td>Electronics</td>
+              <td>Department z</td>
+              <td>Vendor Y</td>
+              <td>MR Ref No.</td>
+              <td>$825.00</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="far fa-square fa-2x"></i>
+              </td>
+              <td>06/12/2018</td>
+              <td>Ben Humphries</td>
+              <td><button class="btn4" type="submit">Sent to SAP</button></td>
+              <td>23456789</td>
+              <td>Warehouse</td>
+              <td>Buyer x</td>
+              <td>Facilities</td>
+              <td>Department x</td>
+              <td>Vendor X</td>
+              <td>MR Ref No.</td>
+              <td>$825.00</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ********************************************************************************************************** TABLE-->
+
+    <!-- **************** -->
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

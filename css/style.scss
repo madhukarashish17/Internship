@@ -1,0 +1,247 @@
+$th_black: #1a1a1a;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "arial";
+}
+
+.topBar {
+  height: 8vh;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  .content {
+    margin: 10px;
+    padding: 0 20px;
+    border-right: 1px solid #eee;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .url{
+      color: black;
+    }
+    &:nth-child(3) {
+      border: none;
+    }
+    .wrapper {
+      display: flex;
+      align-items: center;
+      .fa-plus-circle {
+        color: orange;
+        
+      }
+      .url{
+        color: black;
+      }
+      span,
+      .fa-caret-down {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.h {
+  display: flex;
+  // align-items: flex-start;
+  .nav {
+    width: 8vw;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    //    justify-content: space-around;
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      order: 1;
+      align-items: center;
+      justify-content: center;
+      height: 20%;
+      border-bottom: 1px solid #eee;
+      div {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  // **************************************************************************************** ORDER 2 OF MAIN DIVISION
+  .nav2 {
+    display: flex;
+    width: 92vw;
+    height: 92vh;
+    flex-direction: column;
+    // align-items: flex-start;
+    background-color: #fafafa;
+    // flex-direction: row;
+    // **************************************************************************************** ORDER 1 OF SECOND NAVBAR      (CONTAINS HEADING)
+    .mrl {
+      width: 89vw;
+      height: 7vh;
+      display: flex;
+      align-items: row;
+      color: rgb(15, 15, 15);
+      margin-left: 30px;
+      margin-top: 35px;                                           
+      font-family: "Overpass", sans-serif;
+      font-size: 26px;
+      order: 1;
+    }
+    // **************************************************************************************** ORDER 2 OF SECOND NAVBAR       (CONTAINS DIFFERENT CATEGORIES)
+    .new {
+      display: flex;
+      flex-direction: row;
+      order: 2;
+
+      .collection {
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        margin-top: 15px;
+        .anchor {
+          color: black;
+        }
+
+        .container {
+          display: flex;
+          flex-direction: row;
+          padding-top: 10px;
+          width: 17vw;
+          height: 11vh;
+          border: 1.3px solid rgb(224, 223, 223);
+          padding-top: 25px;
+          padding-left: 15px;
+
+          .span {
+            padding-left: 8px;
+            padding-top: 5px;
+          }
+        }
+      }
+    }
+    // **************************************************************************************** ORDER 2 OF SECOND NAVBAR          (SEARCHING PART)
+    .search {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      order: 3;
+
+      .line {
+        display: flex;
+        flex-direction: row;
+        color: #888aa1;
+        width: 34px;
+        height: 34px;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        border: 1.25px solid rgb(224, 223, 223);
+        background: #ffffff;
+        margin-left: 30px;
+        margin-top: 50px;
+      }
+      .searching {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding-left: 4px;
+        margin-left: 2px;
+        .input-group {
+          width: 390px;
+        }
+      }
+
+      .incoming {
+        display: flex;
+        flex-direction: row;
+        // border: 1.5px solid rgb(224, 223, 223);
+        width: 34px;
+        height: 34px;
+        margin-left: 10px;
+        margin-top: 50px;
+        border: 1.25px solid rgb(224, 223, 223);
+      }
+      .outgoing {
+        display: flex;
+        flex-direction: row;
+        // border: 1.5px solid rgb(224, 223, 223);
+        width: 34px;
+        height: 34px;
+        padding-right: 12px;
+        align-items: center;
+        margin-top: 50px;
+        transform: rotate(180deg);
+        margin-left: 10px;
+        border: 1.25px solid rgb(224, 223, 223);
+      }
+    }
+    // **************************************************************************************** ORDER 2 SECOND NAVBAR (TABLES)
+    .table {
+      order: 4;
+      border: 1.25px solid rgb(224, 223, 223);
+      margin-top: 2vh;
+      margin-left: 30px;
+      width: 85vw;
+      table {
+        tr {
+          width: 100%;
+          th {
+            padding: 15px;
+            border-bottom: 1.25px solid rgb(224, 223, 223);
+            text-align: center;
+            background: #fff;
+            div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .arrows {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 5px;
+              }
+              a {
+                color: #2b2b2b;
+                opacity: 0.8;
+              }
+            }
+          }
+          td {
+            padding: 10px 15px;
+            text-align: center;
+            button {
+              border-radius: 3px;
+              border: none;
+              box-shadow: none;
+              padding: 5px;
+              // background:  #ffe2a6;
+            }
+              .btn1{
+                background: #FFE2A5;
+              }
+              .btn2{
+                background: #AFEEFF;
+              }
+              .btn3{
+                background: #AEF6AE;
+              }
+              .btn4{
+                background-color: #72BB53;
+              }
+            }
+          }
+          &:nth-child(odd) {
+            background: #eee;
+          }
+        }
+      }
+    }
+  }
+
+

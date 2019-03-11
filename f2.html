@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>First Page</title>
+    <!-- <link rel="stylesheet" href="D:\internship\css\style.scss"> -->
+  </head>
+  <body>
+      <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Overpass:400,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style2.css" />
+    <div class="topBar">
+      <div class="content">
+        <a href="f3.html" class="url"><i class="fas fa-bell fa-lg"></i></a>
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <i class="fas fa-plus-circle fa-lg"></i>
+          <span>New Request</span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <i class="fas fa-user-circle fa-lg"></i>
+          <i class="fas fa-caret-down fa-lg"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ************************************************************************************************************** -->
+    <div class="h">
+      <div class="nav">
+        <div class="request container">
+          <a href="f1.html" class="url"><i class="fas fa-clone fa-2x"></i>
+            <div class="req">
+              Requests
+            </div></a>
+        </div>
+        <div class="routes container">
+          <i class="fas fa-route fa-2x"></i>
+          <div class="rou">Route</div>
+        </div>
+        <div class="pricing container">
+          <i class="fas fa-book fa-2x"></i>
+          <div class="price">
+            Pricing Record
+          </div>
+        </div>
+        <div class="settings container">
+          <i class="fas fa-cog fa-2x"></i>
+          <div class="sett">
+            Settings
+          </div>
+        </div>
+        <div class="wms container">
+          <i class="fas fa-globe fa-2x"></i>
+          <div class="wmsr">
+            WMS Records
+          </div>
+        </div>
+      </div>
+    <!-- ************************************************************************************************************************************************************ -->
+
+    <!-- ************************************************************************************************************** NAVBAR 2 -->
+    <div class="nav2">
+      <div class="mrl">
+        Create Material Request
+      </div>
+      <!-- ************************************************************************************************************ FORM PART -->
+      <div class="box">
+        <div class="box1">
+                  <div class="a">
+                       MR Reference no.
+                      <div><input type="text" placeholder="" class="len2" required></div>
+                  </div>
+                  <div class="a">
+                      PO Type
+                      <div><input type="text" placeholder="Type of Charge" id="po" class="len" required><select name="po" id="po" class="select" required></select> </div>
+                  </div>
+                  <div class="a">
+                      Document Reference
+                      <div><input type="text" placeholder="Document Reference" class="len2" required></div>
+                  </div>
+                  <div class="a">
+                    Warehouse
+                    <div><input type="text" placeholder="Warehouse Code" id="wa" class="len" required><select name="warehouse" id="wa" class="select" required></select></div>
+                    <div><input type="text" placeholder="Warehouse Delivery Address Autopopulated" class="len1" required></div>
+                  </div>
+                  <div class="a">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Delivery address is different than warehouse address</label>
+                  </div class="a">
+                  <div>Capital Expence?<span></span><input type="radio" name="radio" id="radio" class="len"></div>
+                  <div>Internal Remarks
+                      <div><input type="text" name="remark" placeholder="Remark for entire PO" class="len2"></div>
+                  </div>
+        </div>
+        <!-- **********************************************************************************************************************  BOX 2 -->
+        <div class="box2">
+            <div class="a">Requested by
+              <div><input type="text" name="requested" placeholder="Name of requester" class="len2"></div>
+            </div>
+            <div class="a">Priority
+              <div><input type="text" name="priority" placeholder="How Quickly needs to be completed" id="priority"  class="len"><select name="priority" id="priority" class="select"></select></div>
+            </div>
+            <div class="a">Send to SAP <input type="radio" id="radio" name="radio"> </div>
+            <div class="a">
+              Vendor
+              <div><input type="text" name="vendor" placeholder="Select vendor" id="vendor" class="len"><select name="vendor" id="vendor" class="select"></select>
+              <div><input type="text" name="vendor" placeholder="Vendor Physical address autopoputated" class="len1"></div></div>
+            </div>
+            <div class="a">CapEx Reason
+              <div><input type="text" name="capex" placeholder="reason the item is a Capital item" id="capex"  class="len"><select name="capex" id="capex" class="select"></select></div>
+            </div>
+            <div class="a">Attachments
+              <div><button><i class="fas fa-upload"></i>upload</button></div>
+            </div>
+        </div>
+      </div>
+      <!-- **************************************************************************************** -->
+        <div class="part">
+          <div class="parts"><span class="text">Parts</span>
+            <button class="btn">Add Parts</button>
+          </div>
+        </div>
+        <!-- *********************************************************************************************************************** -->
+        <div class="button">
+            <div class="container">
+                <div class="button1">1. <span class="text"></span>
+                    <button type="button" class="btn btn-default btn-sm">Vendor Part# <select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Part# <select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Description <select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Qty</button>
+                    <button type="button" class="btn btn-default btn-sm">UOM <select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Package  </button>
+                    <button type="button" class="btn btn-default btn-sm">Location</button>
+                    <button type="button" class="btn btn-default btn-sm">LOB </button>
+                    <button type="button" class="btn btn-default btn-sm">Ctral. Activity </button>
+                    <span class="del"><i class="fas fa-trash"></i></span>
+                </div>
+
+                <div class="button2"><span class="text">... </span>
+                    <button type="button" class="btn btn-default btn-sm">Prod. Cated <select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Del. Date<select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Cust. Name <select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">FA ID</button>
+                    <button type="button" class="btn btn-default btn-sm">Serial#<select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Unit serial# </button>
+                    <button type="button" class="btn btn-default btn-sm">Receipt Date  </button>
+                    <button type="button" class="btn btn-default btn-sm">Contact# </button>
+                    <button type="button" class="btn btn-default btn-sm">Project#</button>
+                </div>
+
+                <div class="button3"><span class="text">... </span>
+                    <button type="button" class="btn btn-default btn-sm">Start Date#<select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">End Date<select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Date need <select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Days</button>
+                    <button type="button" class="btn btn-default btn-sm">Core?<select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Estimate/Final</button>
+                    <button type="button" class="btn btn-default btn-sm">$ Unit Price </button>
+                    <button type="button" class="btn btn-default btn-sm">$ Total</button>
+                </div>
+            </div>
+
+            <div class="container1">
+                <div class="button1"> 2.<span class="text"></span>
+                  <button type="button" class="btn btn-default btn-sm">Vendor Part#<select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Part#<select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Description <select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Qty</button>
+                    <button type="button" class="btn btn-default btn-sm">UOM <select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Package</button>
+                    <button type="button" class="btn btn-default btn-sm">Location </button>
+                    <button type="button" class="btn btn-default btn-sm">LOB </button>
+                    <button type="button" class="btn btn-default btn-sm">Ctrl. Activity</button>
+                    <span class="del"><i class="fas fa-trash"></i></span>
+                </div>
+                <div class="button2"><span class="text"></span>
+                    <button type="button" class="btn btn-default btn-sm">Prod. Cated<select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Del. Date<select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Cust. Name <select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">FA ID</button>
+                    <button type="button" class="btn btn-default btn-sm">Serial#<select name="btn" id="btn"></select> </button>
+                    <button type="button" class="btn btn-default btn-sm">Unit serial# </button>
+                    <button type="button" class="btn btn-default btn-sm">Receipt Date</button>
+                    <button type="button" class="btn btn-default btn-sm">Contact#</button>
+                    <button type="button" class="btn btn-default btn-sm">Project#</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+      
+      <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

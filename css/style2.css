@@ -1,0 +1,526 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "arial";
+}
+
+.topBar {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.topBar .content {
+  margin: 10px;
+  padding: 0 20px;
+  border-right: 1px solid #eee;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topBar .content .url {
+  color: black;
+}
+
+.topBar .content:nth-child(3) {
+  border: none;
+}
+
+.topBar .content .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topBar .content .wrapper .fa-plus-circle {
+  color: orange;
+}
+
+.topBar .content .wrapper span,
+.topBar .content .wrapper .fa-caret-down {
+  margin-left: 10px;
+}
+
+.h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.h .nav {
+  width: 8vw;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.h .nav .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20%;
+  border-bottom: 1px solid #eee;
+}
+
+.h .nav .container .url {
+  color: white;
+}
+
+.h .nav .container div {
+  margin-top: 15px;
+}
+
+.h .nav2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 92vw;
+  height: 92vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fafafa;
+}
+
+.h .nav2 .mrl {
+  width: 89vw;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: row;
+      -ms-flex-align: row;
+          align-items: row;
+  color: #0f0f0f;
+  margin-left: 30px;
+  margin-top: 10px;
+  font-family: "Overpass", sans-serif;
+  font-size: 26px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.h .nav2 .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90vw;
+  height: 57%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.h .nav2 .box .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  height: 95%;
+  border: 1px solid white;
+  background: white;
+  padding-left: 35px;
+  margin-left: 30px;
+}
+
+.h .nav2 .box .box1 .len {
+  width: 450px;
+}
+
+.h .nav2 .box .box1 .len2 {
+  width: 476px;
+}
+
+.h .nav2 .box .box1 .len1 {
+  width: 476px;
+  height: 50px;
+}
+
+.h .nav2 .box .box1 .select {
+  width: 26px;
+  height: 26px;
+}
+
+.h .nav2 .box .box1 .a {
+  padding-top: 5px;
+}
+
+.h .nav2 .box .box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  height: 95%;
+  border: 1px solid white;
+  background: white;
+  padding-left: 40px;
+}
+
+.h .nav2 .box .box2 .a {
+  padding-top: 5px;
+}
+
+.h .nav2 .box .box2 .len {
+  width: 450px;
+}
+
+.h .nav2 .box .box2 .len2 {
+  width: 476px;
+}
+
+.h .nav2 .box .box2 .len1 {
+  width: 476px;
+  height: 50px;
+}
+
+.h .nav2 .box .box2 .select {
+  width: 26px;
+  height: 26px;
+}
+
+.h .nav2 .part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  margin-left: 25px;
+  margin: 5px;
+}
+
+.h .nav2 .part .parts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 25px;
+}
+
+.h .nav2 .part .parts .text {
+  font-family: 'Patua One', cursive;
+  font-size: 20px;
+}
+
+.h .nav2 .part .parts .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 1200px;
+  background: orange;
+}
+
+.h .nav2 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.h .nav2 .button .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  border: 1.5px solid white;
+  width: 88vw;
+  background: white;
+}
+
+.h .nav2 .button .container .button1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.h .nav2 .button .container .button1 .text {
+  color: white;
+}
+
+.h .nav2 .button .container .button1 .btn-default {
+  background: white;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.h .nav2 .button .container .button1 .btn-default #btn {
+  border-radius: 3px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 5px;
+  background: white;
+}
+
+.h .nav2 .button .container .button2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.h .nav2 .button .container .button2 .text {
+  color: white;
+}
+
+.h .nav2 .button .container .button2 .btn-default {
+  background: white;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.h .nav2 .button .container .button2 .btn-default #btn {
+  border-radius: 3px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 5px;
+  background: white;
+}
+
+.h .nav2 .button .container .button3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.h .nav2 .button .container .button3 .text {
+  color: white;
+}
+
+.h .nav2 .button .container .button3 .btn-default {
+  background: white;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.h .nav2 .button .container .button3 .btn-default #btn {
+  border-radius: 3px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 5px;
+  background: white;
+}
+
+.h .nav2 .button .container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  border: 1.5px solid #fafafa;
+  width: 88vw;
+  margin-left: 31px;
+  background: white;
+}
+
+.h .nav2 .button .container1 .button1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding-left: 15px;
+}
+
+.h .nav2 .button .container1 .button1 .text {
+  color: white;
+}
+
+.h .nav2 .button .container1 .button1 .btn-default {
+  background: white;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.h .nav2 .button .container1 .button1 .btn-default #btn {
+  border-radius: 3px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 5px;
+  background: white;
+}
+
+.h .nav2 .button .container1 .button1 .btn-default .del {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.h .nav2 .button .container1 .button2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding-left: 25px;
+}
+
+.h .nav2 .button .container1 .button2 .text {
+  color: white;
+}
+
+.h .nav2 .button .container1 .button2 .btn-default {
+  background: white;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.h .nav2 .button .container1 .button2 .btn-default #btn {
+  border-radius: 3px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 5px;
+  background: white;
+}
+/*# sourceMappingURL=style2.css.map */
